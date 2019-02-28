@@ -1,0 +1,25 @@
+
+<div class="container">
+<p> Welcome to {{ title }}. </p>
+
+{{#if isUserLoggedIn }}
+  <p> Hello, {{ currentUserInfo.user }}. </p>
+{{/if}}
+</div>
+
+<nav class="container">
+  <ul>
+    {{#if isUserLoggedIn }}
+
+     <li> <a href="/profile/{{user._id}}"> Profile </a> </li>
+      <li> <a href="/events"> Events </a> </li>
+      <li> <a href="/logout"> Log Out </a> </li>
+    {{else}}
+      <li> <a href="/signup"> Sign Up </a> </li>
+      <li> <a href="/login"> Log In </a> </li>
+    {{/if}}
+  </ul>
+</nav>
+
+
+

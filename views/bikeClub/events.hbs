@@ -1,0 +1,16 @@
+<i class="fas fa-arrow-alt-circle-left"></i>
+<a href="/">Return</a>
+<div class="container">
+<h1>Events</h1>
+{{#each eventsList}}
+    <p><a href="events/{{this._id}}"> {{this.title}}</a> 
+    <i class="fas fa-edit"></i> 
+    <a href="/event/edit/{{this._id}}">Edit this Event</a> 
+    <i class="far fa-trash-alt"></i>
+    <a href="/event/del/{{this._id}}">Delete this Event</a>
+    </p>
+{{/each}}
+    <i class="fas fa-plus-square"></i>
+    <a href="/event/add">Click to Add a new Event</a>
+    
+</div>

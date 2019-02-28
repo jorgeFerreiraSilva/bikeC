@@ -1,0 +1,15 @@
+<div class="container">
+<i class="fas fa-arrow-alt-circle-left"></i>
+<a href="/events">Return</a>
+<form action="/event/edit?eventId={{event.id}}" method="post">
+  <label for="">Title:</label>
+  <input type="text" name="title" value="{{event.title}}">
+  
+<li>Description:</li>
+  
+<textarea class='edit_area' type="text" rows="10" cols="40" name="description" value="{{event.description}}"></textarea>
+
+<button type="submit">Edit</button>
+  
+</form>
+</div>

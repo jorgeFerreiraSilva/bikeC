@@ -1,0 +1,48 @@
+body {
+    padding: 50px;
+    background-color: $color-first;
+    color: $color-word;
+    text-align: center;
+  }
+
+  img{
+    padding-bottom: 8vh;
+    color: $color-word;
+  }
+
+  a {
+    color: $color-word;
+    text-decoration: none;
+    
+  }
+
+  a:hover {
+    color: $color-word;
+    text-decoration: none;
+  }
+  
+  ul{
+    list-style: none;
+  }
+
+  button{
+    width: 18rem;
+    height: 2rem;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+  }
+
+  input{
+    border-radius: 6px;
+    text-align: center; 
+  }
+
+  li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }

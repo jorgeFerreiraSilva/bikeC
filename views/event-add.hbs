@@ -1,0 +1,21 @@
+<i class="fas fa-arrow-alt-circle-left"></i>
+<a href="/events">Return</a>
+<form action="/event/add" method="post" id="formCreate">
+  <li>Title:</li>
+  <input type="text" name="title">
+
+  <li>Initial Address</li>
+  <input type="hidden" name="latitude" id="latitude" placeholder="latitude">
+  <input type="hidden" name="longitude" id="longitude" placeholder="longitude">
+  <input type="text" id="address" placeholder="Initial Adress">
+
+  <li>Final Address</li>  
+  <input type="hidden" name="latitudeEnd" id="latitudeEnd" placeholder="latitude">
+  <input type="hidden" name="longitudeEnd" id="longitudeEnd" placeholder="longitude">
+  <input type="text" id="addressEnd" placeholder="Final Adress">
+    
+  <li>Description:</li>
+  <textarea class='edit_area' type="text" name="description" rows="10" cols="60"> </textarea>
+
+  <button type="submit" id="formSubmit" >ADD</button>
+</form>

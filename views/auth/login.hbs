@@ -1,0 +1,33 @@
+{{!-- <h2> Log In </h2> --}}
+{{#if errorMessage}}
+  <p class="error-message">
+    {{ errorMessage }}
+  </p>
+{{/if}}
+<div class="container">
+<form action="/login" method="post">
+
+  <div class="user_icon_login">
+    <i class="fas fa-user"></i>
+      <input type="email" name="email" id="email-input"
+      placeholder="username">
+
+
+  <div class="lock_icon_login">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="password" id="password-input"
+      placeholder="••••••••••••">
+  </div>
+
+  <button> Log In </button>
+</form>
+</div>
+
+<div class="container">
+<p>
+  Don't have an account?
+  <a href="/signup">
+    Create an account.
+  </a>
+</p>
+</div>

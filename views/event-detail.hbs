@@ -1,0 +1,33 @@
+{{#if errorMessage}}
+  <p class="error-message">
+    {{ errorMessage }}
+  </p>
+{{/if}}
+
+<i class="fas fa-arrow-alt-circle-left"></i>
+<a href="/events">Return</a>
+<h1>{{event.title}}</h1>
+<p>{{event.description}}</p>
+  <div id="map" class='map'></div>
+
+{{#each comments}}
+<div>
+  <span>{{user.user}}</span>
+  <label>Comment:</label>
+  <p>{{text}}</p> 
+  <form action="/events/del/{{id}}/{{event}}" method="POST">
+    <button name='text'>Delete this Comment</button>
+  </form>
+ 
+</div>
+{{/each}}
+
+
+
+<form action="/events/{{event.id}}" method="post">
+  <li>Coment:</li>
+  <textarea rows="10" cols="80" name="text"></textarea>
+  <button type="submit">ADD</button>
+</form>
+
+

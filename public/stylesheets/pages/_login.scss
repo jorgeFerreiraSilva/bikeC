@@ -1,0 +1,49 @@
+// login
+
+//form{
+//    //padding: 10vh;
+//  }
+  
+  div input {
+    width: 18rem;
+    height: 2rem;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .user_icon_login input{
+    padding-left: 6vh;
+    margin-bottom: 1vh;
+  }
+  
+  .user_icon_login{
+    position: relative;
+  }
+  
+  .user_icon_login i{
+    position: absolute;
+    top: 5px;
+    padding: 4px 8px;
+  }
+  
+  .lock_icon_login input{
+    padding-left: 6vh;
+    margin-bottom: 1vh;
+  }
+  
+  .lock_icon_login{
+    position: relative;
+  }
+  
+  .lock_icon_login i{
+    position: absolute;
+    top: 5px;
+    padding: 4px 8px;
+  }
+
+  
+  
+  
